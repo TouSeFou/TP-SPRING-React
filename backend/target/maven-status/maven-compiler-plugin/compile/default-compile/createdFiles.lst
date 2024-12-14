@@ -1,0 +1,6 @@
+fr/ubo/projetws/tpusers/repository/EtudiantRepository.class
+fr/ubo/projetws/tpusers/service/EtudiantService.class
+fr/ubo/projetws/tpusers/TpusersApplication.class
+fr/ubo/projetws/tpusers/controller/EtudiantController.class
+fr/ubo/projetws/tpusers/WebConfig.class
+fr/ubo/projetws/tpusers/model/Etudiant.class

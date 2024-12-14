@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  database:
+    image: gvenzl/oracle-free:latest
+    container_name: oracle-db
+    ports:
+      - "1521:1521"  # Map Oracle's default port to host
+    environment:
+      ORACLE_PASSWORD: yourpassword  # Set Oracle user password
+    volumes:
+      - oracle-data:/opt/oracle/oradata  # Persist database data
+    
+
+  backend:
+    build:
+      context: ./backend  # Path to the backend Dockerfile
+      dockerfile: Dockerfile
+    container_name: backend-service
+    ports:
+      - "8080:8080"  # Map Spring Boot default port to host
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:oracle:thin:@oracle-db:1521 
+      SPRING_DATASOURCE_USERNAME: system  
+      SPRING_DATASOURCE_PASSWORD: yourpassword 
+    depends_on:
+      - database
+    
+
+  frontend:
+    build:
+      context: ./frontend  # Path to the frontend Dockerfile
+      dockerfile: Dockerfile
+    container_name: frontend-service
+    ports:
+      - "3000:80"  # Map React default port to host
+    
+
+volumes:
+  oracle-data:
+
+

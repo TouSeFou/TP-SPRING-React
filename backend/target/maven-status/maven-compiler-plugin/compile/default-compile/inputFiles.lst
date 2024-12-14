@@ -1,0 +1,6 @@
+/home/dosi/Bureau/TP-UTILISATEURS/backend/src/main/java/fr/ubo/projetws/tpusers/TpusersApplication.java
+/home/dosi/Bureau/TP-UTILISATEURS/backend/src/main/java/fr/ubo/projetws/tpusers/WebConfig.java
+/home/dosi/Bureau/TP-UTILISATEURS/backend/src/main/java/fr/ubo/projetws/tpusers/controller/EtudiantController.java
+/home/dosi/Bureau/TP-UTILISATEURS/backend/src/main/java/fr/ubo/projetws/tpusers/model/Etudiant.java
+/home/dosi/Bureau/TP-UTILISATEURS/backend/src/main/java/fr/ubo/projetws/tpusers/repository/EtudiantRepository.java
+/home/dosi/Bureau/TP-UTILISATEURS/backend/src/main/java/fr/ubo/projetws/tpusers/service/EtudiantService.java
